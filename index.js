@@ -137,19 +137,6 @@ client.on(`message`, async (message) => {
 
 });
 
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("843177720996298772");
-  let embed = new MessageEmbed().setColor("#FF0000")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
-  .addField(" **Server Name**", `${guild.name}`)
-  .addField(" **Server Owner**", `${guild.owner}`)
-  .addField(" **Server Id**", `${guild.id}`)
-  .addField(" **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("843177756958654515");
   let embed = new MessageEmbed()
