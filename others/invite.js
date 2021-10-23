@@ -15,7 +15,7 @@ module.exports = {
     //react with approve emoji
     message.react("<:emoji_55:900461622185828492>");
     //send the invite embed
-    message.reply(new MessageEmbed().setColor("#FF55FF").setTitle("").setDescription("<:emoji_55:900461622185828492> **[Click Here](https://discord.com/api/oauth2/authorize?client_id=881148979373555763&permissions=261724045121&scope=bot) to invite the bot.**")
+    message.reply(new MessageEmbed().setColor("#FF55FF").setTitle("").setDescription("<:emoji_55:900461622185828492> **[Click Here](https://discord.com/api/oauth2/authorize?client_id=900455193081155595&permissions=536601952193&scope=bot) to invite the bot.**")
     .setFooter(""));
   }
 }
